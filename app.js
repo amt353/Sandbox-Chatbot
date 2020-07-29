@@ -24,5 +24,13 @@ const red_div2 = document.getElementById("r2");
 
 // Add functionality
 green_div1.addEventListener('click',function() {
-  console.log("Hey! You clicked on happy :)")
+  console.log("Ey! You clicked on happy :)")
+})
+
+yellow_div1.addEventListener('click',function() {
+  console.log("Ok, you clicked on semi-happy :-|")
+})
+
+red_div1.addEventListener('click',function() {
+  console.log("You ok? You clicked on unhappy :(")
 })
