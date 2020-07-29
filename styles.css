@@ -58,8 +58,8 @@ header > h1 {
   }
 
 .feedback {
-  font-size: 40 px;
-  color: white;
+  font-size: 40px;
+  color: coral;
   }
 
 .feedback > p {
@@ -68,3 +68,50 @@ header > h1 {
   font-family: Asap, sans-seif;
   }
 
+.choices-1 {
+  margin: 50px 0;
+  text-align: center;
+  }
+
+.choice-1 {
+  display: inline-block;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 10px;
+  display: inline:block;
+  }
+  
+.choice-1:hover {
+  cursor: pointer;
+  background: white;
+  }
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-family: Asap, sans-seif;
+  font-weight: bold;
+  font-size: 30px;
+  }
+
+
+
+
+.choices-2 {
+  margin: 50px 0;
+  text-align: center;
+  }
+
+.choice-2 {
+  display: inline-block;
+  border: 10px solid white;
+  margin: 0 10px;
+  padding: 10px;
+  display: inline:block;
+  }
+
+.choice-2:hover {
+  cursor: pointer;
+  background: white;
+  }
