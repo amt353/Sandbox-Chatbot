@@ -61,3 +61,10 @@ header > h1 {
   font-size: 40 px;
   color: white;
   }
+
+.feedback > p {
+  text-align: center;
+  font-weight: bold;
+  font-family: Asap, sans-seif;
+  }
+
