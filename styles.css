@@ -1,4 +1,4 @@
-/* CSS Page for Sandbox Chatbot by Angela Tomita */
+/* CSS Script for Sandbox Chatbot by Angela Tomita */
 
 
   @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
@@ -87,7 +87,7 @@ header > h1 {
   background: white;
   }
 
-#action-message {
+#action-message1 {
   text-align: center;
   color: white;
   font-family: Asap, sans-seif;
@@ -115,3 +115,12 @@ header > h1 {
   cursor: pointer;
   background: white;
   }
+
+#action-message2 {
+  text-align: center;
+  color: white;
+  font-family: Asap, sans-seif;
+  font-weight: bold;
+  font-size: 30px;
+  }
+
