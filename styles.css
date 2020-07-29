@@ -26,5 +26,38 @@ header > h1 {
   }
 
 .score-board {
+  margin: 20px auto;
   border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 46px;
+  padding: 15px 20px;
+  font-family: Asap, sans-serif;
+  }
+
+.badge {
+  background: #E25840;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: Asap, sans-seif;
+  }
+
+#user-label {
+  position: absolute;
+  top: 135px;
+  left: 185px;
+  }
+
+#bot-label {
+  position: absolute;
+  top: 135px;
+  right: 195px;
+  }
+
+.feedback {
+  font-size: 40 px;
+  color: white;
   }
