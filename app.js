@@ -12,7 +12,7 @@ let botScore = 0;
 const userScore_span = document.getElementById("user-score");
 const botScore_span = document.getElementById("bot-score");
 const scoreBoard_div = document.querySelector(".score-board");
-const feedback_div = document.querySelector(".feedback");
+const feedback_p = document.querySelector(".feedback > p");
 
 const green_div1 = document.getElementById("g1");
 const yellow_div1 = document.getElementById("y1");
@@ -40,6 +40,7 @@ function win() {
 	// Debugger for userScore 
 	//console.log("WIN!! \nScore: "+userScore)
 	userScore_span.innerHTML = userScore;
+	feedback_p.innerHTML = "What happiness to smile into another's smile :]"
 }
 
 function lose() {
