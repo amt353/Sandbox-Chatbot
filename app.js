@@ -22,27 +22,43 @@ const green_div2 = document.getElementById("g2");
 const yellow_div2 = document.getElementById("y2");
 const red_div2 = document.getElementById("r2");
 
+
 // Add functionality
-green_div1.addEventListener('click',function() {
-  console.log("Ey! You clicked on happy :)")
-})
 
-yellow_div1.addEventListener('click',function() {
-  console.log("Ok, you clicked on semi-happy :-|")
-})
+function game(userChoice) {
+	console.log("???" + userChoice);
+}
 
-red_div1.addEventListener('click',function() {
-  console.log("You ok? You clicked on unhappy :(")
-})
+function main() {
+	green_div1.addEventListener('click',function() {
+	  //console.log("Ey! You clicked on happy :)")
+	  game("g1");
+	})
 
-green_div2.addEventListener('click',function() {
-  console.log("You clicked on happy :)")
-})
+	yellow_div1.addEventListener('click',function() {
+	  //console.log("Ok, you clicked on semi-happy :-|")
+	  game("y1");
+	})
 
-yellow_div2.addEventListener('click',function() {
-  console.log("You clicked on semi-happy :-|")
-})
+	red_div1.addEventListener('click',function() {
+	  //console.log("You ok? You clicked on unhappy :(")
+	  game("r1");
+	})
 
-red_div2.addEventListener('click',function() {
-  console.log("You clicked on unhappy :(")
-})
+	green_div2.addEventListener('click',function() {
+	  //console.log("You clicked on happy :)")
+	  game("g2");
+	})
+
+	yellow_div2.addEventListener('click',function() {
+	  //console.log("You clicked on semi-happy :-|")
+	  game("y2");
+	})
+
+	red_div2.addEventListener('click',function() {
+	  //console.log("You clicked on unhappy :(")
+	  game("r2");
+	})
+}
+
+main();
