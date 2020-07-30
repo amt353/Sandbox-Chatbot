@@ -25,8 +25,19 @@ const red_div2 = document.getElementById("r2");
 
 // Add functionality
 
+function getComputerChoice() {
+	const choices = ['g1', 'y1', 'r1'];
+	const randNum = Math.floor( Math.random() * 3);
+	return choices[randNum];
+}
+
+// Debugger for getComputerChoice()
+//console.log(getComputerChoice());
+
 function game(userChoice) {
-	console.log("???" + userChoice);
+	const computerChoice = getComputerChoice();
+	console.log("user choice:: " + userChoice);
+	console.log("computer choice:: " + computerChoice)
 }
 
 function main() {
