@@ -36,8 +36,16 @@ function getComputerChoice() {
 
 function game(userChoice) {
 	const computerChoice = getComputerChoice();
-	console.log("user choice:: " + userChoice);
-	console.log("computer choice:: " + computerChoice)
+	
+	// Debugger for choices
+	//console.log("user choice:: " + userChoice);
+	//console.log("computer choice:: " + computerChoice)
+
+	switch(userChoice + computerChoice) {
+		case "g1g1":
+			console.log("Win?")
+			break;
+	}
 }
 
 function main() {
