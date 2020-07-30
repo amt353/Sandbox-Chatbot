@@ -34,3 +34,15 @@ yellow_div1.addEventListener('click',function() {
 red_div1.addEventListener('click',function() {
   console.log("You ok? You clicked on unhappy :(")
 })
+
+green_div2.addEventListener('click',function() {
+  console.log("You clicked on happy :)")
+})
+
+yellow_div2.addEventListener('click',function() {
+  console.log("You clicked on semi-happy :-|")
+})
+
+red_div2.addEventListener('click',function() {
+  console.log("You clicked on unhappy :(")
+})
