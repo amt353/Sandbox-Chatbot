@@ -4,8 +4,8 @@
 // console.log("hello")
 
 // Set initial score values
-const userScore = 0;
-const botScore = 0;
+let userScore = 0;
+let botScore = 0;
 
 // Caching dom: tagged dom var (html elements that store dom elements)
 // --for performance and convenience
@@ -34,6 +34,20 @@ function getComputerChoice() {
 // Debugger for getComputerChoice()
 //console.log(getComputerChoice());
 
+function win() {
+	userScore++;
+	
+	// Debugger for userScore 
+	//console.log("WIN!! \nScore: "+userScore)
+	userScore_span.innerHTML = userScore;
+}
+
+function lose() {
+}
+
+function draw() {
+}
+
 function game(userChoice) {
 	const computerChoice = getComputerChoice();
 	
@@ -41,9 +55,10 @@ function game(userChoice) {
 	//console.log("user choice:: " + userChoice);
 	//console.log("computer choice:: " + computerChoice)
 
+	console.log("User score: " + userScore);
 	switch(userChoice + computerChoice) {
 		case "g1g1":
-			console.log("Win?")
+			win();
 			break;
 	}
 }
