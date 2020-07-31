@@ -3,6 +3,20 @@
 // Test link to html: Inspect html page, console tab
 // console.log("hello")
 
+
+/* A few references 
+- to be incorporated as use cases/ notes to self/ exploratory examples:
+
+>> Context: 
+https://towardsdatascience.com/javascript-context-this-keyword-9a78a19d5786
+
+>> Inheritance and prototype chain: 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain 
+
+>> Closures: https://developer.mozilla.org/en-US/docs/Web/JavaScript/ClosuresO
+
+*/
+
 // Set initial score values
 let userScore = 0;
 let botScore = 0;
@@ -37,7 +51,7 @@ function getBotChoice() {
 function matchCheck(mix){
 
 	// Bug! Or... browser.
-	// Array comprehension: logic doesn't require this. Just explorin
+	// Array comprehension: logic doesn't require this. Just exploring
 	// return [for i of Array(mix.length) mix[i]==mix[0];
 	
 	// Initialize arr for try-catch 
@@ -47,8 +61,13 @@ function matchCheck(mix){
 			arr.push(mix[i]==mix[0]);
 		}
 
+		// When user does not "win", test try-catch with err
+		if (arr[2]==false) {
+			ghostFx();
+		}
+
 		// Debugger for checking:
-		// - array comprehension runs!
+		// - for loop runs!
 		// - try clause runs every time
 		console.log("Try-Catch: "+arr);
 
@@ -82,6 +101,7 @@ function game(userChoice) {
 	// Debugger for mix
 	console.log(mix+'\n'+matchCheck(mix));
 
+	// Practicing switch-case
 	switch(matchCheck(mix)) {
 		case true:
 			win();
