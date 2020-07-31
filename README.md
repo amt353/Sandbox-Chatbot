@@ -16,6 +16,6 @@ The first bite-sized objective is to set up the general interface and a watered-
 The chat function implementation: user can input strings for processing and a response will be displayed (hard-coded for starters).
 
 ## Checkpoint 3: NLP
-*Explore natural* 
+*Explore natural (JavaScript library)* 
 
 The natural language processing aspect of the chatbot will be incorporated, where the strings are analyzed for sentiment (the bot's "guess" of the user's mood, which can earn the bot points for getting it correct) and intent (which will be mapped to the bot's "mood" that the user can guess).
