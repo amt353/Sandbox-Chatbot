@@ -35,11 +35,28 @@ function getBotChoice() {
 //console.log(getBotChoice());
 
 function matchCheck(mix){
-	return mix[0]==mix[2];
 
-	// Bug!
-	// Array comprehension: logic doesn't require this. Just exploring
+	// Bug! Or... browser.
+	// Array comprehension: logic doesn't require this. Just explorin
 	// return [for i of Array(mix.length) mix[i]==mix[0];
+	
+	// Initialize arr for try-catch 
+	var arr = [];
+	try {
+		for (i of [...Array(mix.length).keys()]) {
+			arr.push(mix[i]==mix[0]);
+		}
+
+		// Debugger for checking:
+		// - array comprehension runs!
+		// - try clause runs every time
+		console.log("Try-Catch: "+arr);
+
+	} catch (e) {
+		console.error(e);
+	}
+
+	return mix[0]==mix[2];
 }
 
 function win() {
