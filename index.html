@@ -4,7 +4,7 @@
 <! Objective: Create a prototype chatbot that responds to user input. The user and chatbot can guess each other's mood: guessing correctly earns one point and incorrect guesses will grant the point to the opponent.>
 
 
-<!Reference: Code is modified from Youtube video called, "Web Development Tutorial - JavaScript, HTML, CSS - Rock Paper Scissors Game" by freeCodeCamp.org>
+<!Reference: Youtube video called, "Web Development Tutorial - JavaScript, HTML, CSS - Rock Paper Scissors Game" by freeCodeCamp.org>
 
 
 <!DOCTYPE html>
@@ -62,6 +62,21 @@
     <p id="action-message2">Your thoughts on how I feel?</p>
 
     <script src="app.js" charset="utf-8"></script>
+
+	<!Reference: https://itnext.io/build-a-group-chat-app-in-30-lines-using-node-js-15bfe7a2417 />
+	<! Exploring chat options/>
+	<ul id="messages"></ul>
+	<form action="/" method="POST" id="chatForm">
+	<input id="txt" autocomplete="off" autofocus="on" placeholder="type your message here..." /><button>Send</button>
+	</form>
+	<script>
+	// submit text message without reload/refresh the page
+	$('form').submit(function(e){
+	e.preventDefault(); // prevents page reloading
+	$('#txt').val('');
+	return false;
+	});
+	</script>
 
   </body>
 

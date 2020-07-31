@@ -49,6 +49,7 @@ function lose() {
 function draw() {
 }
 
+// Simplified game logic: user gets point if choice matches bot "choice"
 function game(userChoice) {
 	const computerChoice = getComputerChoice();
 	
