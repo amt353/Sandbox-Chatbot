@@ -25,14 +25,22 @@ const red_div2 = document.getElementById("r2");
 
 // Add functionality
 
-function getComputerChoice() {
+function getBotChoice() {
 	const choices = ['g1', 'y1', 'r1'];
 	const randNum = Math.floor( Math.random() * 3);
 	return choices[randNum];
 }
 
-// Debugger for getComputerChoice()
-//console.log(getComputerChoice());
+// Debugger for getBotChoice()
+//console.log(getBotChoice());
+
+function matchCheck(mix){
+	return mix[0]==mix[2];
+
+	// Bug!
+	// Array comprehension: logic doesn't require this. Just exploring
+	// return [for i of Array(mix.length) mix[i]==mix[0];
+}
 
 function win() {
 	userScore++;
@@ -43,26 +51,29 @@ function win() {
 	feedback_p.innerHTML = "What happiness to smile into another's smile :]"
 }
 
-function lose() {
-}
-
-function draw() {
-}
-
 // Simplified game logic: user gets point if choice matches bot "choice"
 function game(userChoice) {
-	const computerChoice = getComputerChoice();
+	const BotChoice = getBotChoice();
 	
 	// Debugger for choices
 	//console.log("user choice:: " + userChoice);
-	//console.log("computer choice:: " + computerChoice)
+	//console.log("Bot choice:: " + BotChoice)
+	
+	// Consolidate choices to an array for analysis
+	const mix = userChoice + BotChoice;
 
-	console.log("User score: " + userScore);
-	switch(userChoice + computerChoice) {
-		case "g1g1":
+	// Debugger for mix
+	console.log(mix+'\n'+matchCheck(mix));
+
+	switch(matchCheck(mix)) {
+		case true:
 			win();
 			break;
+	return false;
 	}
+
+	// Display the score
+	console.log("User score: " + userScore);
 }
 
 function main() {
